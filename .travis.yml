@@ -1,7 +1,7 @@
 language: python
-python
+python:
   - 3.6
-before
+before_install:
   - python --version
   - pip install -U pip
   - pip install codev
