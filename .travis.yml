@@ -6,6 +6,6 @@ before_install:
   - pip install -U pip
   - pip install codev
 script:
-  - coverage run --source=com/Nicolas/ -m unittest discover;coverage report -m
-  - python -m unitest discover
+  - coverage run --source=com/Nicolas/ -m unittest discovery;coverage report -m
+  - python -m unittest discover
   
