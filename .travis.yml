@@ -1,11 +1,20 @@
 language: python
+
 python:
-  - 3.6
+
+- 3.6
+
 before_install:
-  - python --version
-  - pip install -U pip
-  - pip install codev
+
+- python --version
+
+- pip install -U pip
+
+- pip install codecov
+
 script:
-  - coverage run --source=com/Nicolas/ -m unittest discovery;coverage report -m
-  - python -m unittest discover
+
+- coverage run --source=com/Nicolas/ -m unittest discovery;coverage report -m
+
+- python -m unittest discover
   
